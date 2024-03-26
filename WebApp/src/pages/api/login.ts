@@ -15,7 +15,7 @@ export default async function handler(
     if (authReq !== null) {
       let authReqObj = JSON.parse(authReq);
 
-      let SELECT_QUERY = `SELECT FULL_NAME, EMAIL, USERNAME FROM Users WHERE EMAIL = '${authReqObj.username}' OR USERNAME = '${authReqObj.username}' AND PASSWORD = '${authReqObj.password}'`;
+      let SELECT_QUERY = `SELECT FULL_NAME, EMAIL, USERNAME, TOKEN FROM Users WHERE EMAIL = '${authReqObj.username}' OR USERNAME = '${authReqObj.username}' AND PASSWORD = '${authReqObj.password}'`;
       const selectQuery: any = await select(SELECT_QUERY);
 
       if (

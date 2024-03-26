@@ -1,4 +1,5 @@
 import {validations} from './validations';
+import PushNotification from 'react-native-push-notification';
 
 export const getUsernameRules = (countryCode: any) => {
   let customRules = validations.username[countryCode];

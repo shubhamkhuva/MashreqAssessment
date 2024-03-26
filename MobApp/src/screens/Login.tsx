@@ -89,7 +89,6 @@ const Login = ({navigation}: any) => {
       username: data.username,
       password: data.password,
     };
-    console.log(encryptString(JSON.stringify(request)));
     let config = {
       Authorization: `Bearer ${encryptString(JSON.stringify(request))}`,
     };
@@ -164,6 +163,7 @@ const Login = ({navigation}: any) => {
             style={styles.button}>
             {t('screens.login.loginButton')}
           </Button>
+
           <TouchableOpacity onPress={() => navigation.navigate('Register')}>
             <View style={styles.createNewView}>
               <Text style={styles.createNewText}>

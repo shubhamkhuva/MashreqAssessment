@@ -9,7 +9,7 @@ import {
   Platform,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {Button, Menu} from 'react-native-paper';
+import {Button} from 'react-native-paper';
 import MTextField from '../core/components/MTextInput';
 import {theme} from '../core/theme';
 import {useForm} from 'react-hook-form';

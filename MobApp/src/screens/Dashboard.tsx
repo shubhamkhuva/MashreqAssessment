@@ -4,6 +4,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import {Button} from 'react-native-paper';
 import {useSelector} from 'react-redux';
 import {t} from 'i18next';
+import RemoteNotificationAndroid from '../core/components/RemoteNotificationAndroid';
+import RemoteNotificationiOS from '../core/components/RemoteNotificationiOS';
 
 const Dashboard = ({navigation}: any) => {
   const currentUser = useSelector((state: any) => state.currentUser);
@@ -38,6 +40,9 @@ const Dashboard = ({navigation}: any) => {
           <Text style={styles.username}>{currentUser?.EMAIL}</Text>
         </View>
       </View>
+
+      <RemoteNotificationAndroid />
+      {/* <RemoteNotificationiOS /> */}
     </View>
   );
 };

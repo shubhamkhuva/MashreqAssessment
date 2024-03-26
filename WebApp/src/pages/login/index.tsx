@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 import { ROUTER_PATH } from "@/navigations/routers";
 import { useRouter } from "next/router";
 import { validations } from "@/utils/validations";
-import { getUsernameRules } from "@/utils/helper";
+import { getRandomNumber, getUsernameRules } from "@/utils/helper";
 import Link from "next/link";
 import { setLoggedInUser } from "@/context/actions/actions";
 import { useDispatch } from "react-redux";
@@ -44,8 +44,13 @@ export default function Login() {
     if (!executeAuthLoading && executeAuthResponse) {
       const { data, status, errorCode } = executeAuthResponse;
       if (status === SUCCESS) {
+        let resData: any = data;
         toast.success(t("message.SUCCESS_LOGGEDIN"));
         dispatch(setLoggedInUser(data));
+        if (resData.TOKEN !== null && resData.TOKEN !== 0) {
+          sendNotification(resData.TOKEN);
+        }
+
         navigator.push(ROUTER_PATH.DASHBOARD);
       }
       if (status === ERROR) {
@@ -54,6 +59,42 @@ export default function Login() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [executeAuthLoading, executeAuthResponse]);
+
+  const sendNotification = async (token: string) => {
+    const payload = {
+      to: token,
+      collapse_key: "type_a",
+      data: {
+        message: "Your account has been logged in to Web!",
+        title: "Account LoggedIn",
+        id: getRandomNumber(1111, 9999),
+        key_2: "Hellowww",
+      },
+    };
+
+    try {
+      const response = await fetch("https://fcm.googleapis.com/fcm/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization:
+            "key=AAAAu2G_IPo:APA91bGFaDF5ZJnVThtclN8ooq4U-TAl0xbrbwcYK2WUhgX70u8pQpg8nBgoL_1-qj8hxgO6M4m21HTughA0PoiLipbk1hyn4AWmT5zGOO54W_itNCnC0K_qbItZ1HL6AalutneplR9H",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        console.log("Notification sent successfully");
+        // Handle success as needed
+      } else {
+        console.error("Failed to send notification:", response.statusText);
+        // Handle failure as needed
+      }
+    } catch (error) {
+      console.error("Error sending notification:", error);
+      // Handle error as needed
+    }
+  };
 
   const onSubmit = async (data: any) => {
     let request = {
