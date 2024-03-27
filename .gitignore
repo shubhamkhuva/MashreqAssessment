@@ -69,3 +69,5 @@ MobApp/android/app/build/*
 WebApp/.next/*
 MobApp/.jest/*
 WebApp/.next/*
+WebApp/.next/cache
+/WebApp/.next

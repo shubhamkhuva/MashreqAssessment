@@ -37,7 +37,7 @@ const MTextInput = (props: MTextInputProps) => {
             onBlur={onBlur}
             value={value}
             type={isPassword ? "password" : "text"}
-            InputLabelProps={{ shrink: true, required: required }}
+            InputLabelProps={{ required: required }}
             variant="outlined"
             style={{ width: "100%", ...style }}
             error={Boolean(error)}
