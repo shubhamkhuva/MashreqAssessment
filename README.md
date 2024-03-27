@@ -2,13 +2,17 @@
 
 ## Tech Stack
 
-**Web:** [![nextjs](https://img.shields.io/badge/nextjs-14-417e38?style=for-the-badge&logo=npm&logoColor=white)](https://nextjs.org)
+**Web:**
+[![nextjs](https://img.shields.io/badge/nextjs-14-417e38?style=for-the-badge&logo=npm&logoColor=white)](https://nextjs.org)
 
-**Mobile App:** [![nextjs](https://img.shields.io/badge/react_native-0.73-417e38?style=for-the-badge&logo=react&logoColor=white)](https://nextjs.org)
+**Mobile App:**
+[![nextjs](https://img.shields.io/badge/react_native-0.73-417e38?style=for-the-badge&logo=react&logoColor=white)](https://nextjs.org)
 
-**Server:** [![nextjs](https://img.shields.io/badge/nextjs-API-417e38?style=for-the-badge&logo=npm&logoColor=white)](https://nextjs.org)
+**Server:**
+[![nextjs](https://img.shields.io/badge/nextjs-API-417e38?style=for-the-badge&logo=npm&logoColor=white)](https://nextjs.org)
 
-**Database:** [![mysql](https://img.shields.io/badge/mysql-000000?style=for-the-badge&logo=mysql&logoColor=white)](https://freedb.tech/)
+**Database:**
+[![mysql](https://img.shields.io/badge/mysql-555555?style=for-the-badge&logo=mysql&logoColor=white)](https://freedb.tech/)
 
 ## Part 1: Mobile App (React Native)
 
