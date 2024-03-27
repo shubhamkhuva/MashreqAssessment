@@ -2,6 +2,8 @@
 
 This repository tech stack encompasses both mobile and web applications built with React Native and Next.js, respectively. The functionality checks include country-specific username validation, locale-based theme application, and seamless integration with native modules such as Firebase for push notifications. Both codebases exhibit high-quality organization, modular structure, and thorough testing, ensuring reusability and adherence to best practices. Security measures, including data encryption and secure communication with servers, are robustly implemented. Additionally, responsive design and essential features like user dashboards and password change mechanisms enhance user experience and security.
 
+[Figma App Design](https://www.figma.com/file/XDZDWS0WNorLAElhdJxmLk/Mashreq-Assessment?type=design&node-id=0%3A1&mode=dev&t=NkRQphS9l2CHgesN-1)
+
 ## Tech Stack
 
 [![nextjs](https://img.shields.io/badge/nextjs-14-417e38?style=for-the-badge&logo=npm&logoColor=white)](https://nextjs.org)
@@ -11,6 +13,12 @@ This repository tech stack encompasses both mobile and web applications built wi
 [![nextjs](https://img.shields.io/badge/nextjs-API-417e38?style=for-the-badge&logo=npm&logoColor=white)](https://nextjs.org)
 
 [![mysql](https://img.shields.io/badge/mysql-555555?style=for-the-badge&logo=mysql&logoColor=white)](https://freedb.tech/)
+
+## Features:
+- Secure Login with Username or Email Address (Country wise validations) and Password in Mob (Android and IOS) and Web
+- Create an account in the system (Country wise validations and other common validations) in Mob (Android and IOS) and Web
+- When someone login to account in the web then Push Notification to Mobile "Your account has been loggedIn to Web" (Android)
+- Change Loggedin user Password with Old Password and New Password (Web)
 
 ## Part 1: Mobile App (React Native)
 
