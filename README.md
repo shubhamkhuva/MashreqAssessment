@@ -1,4 +1,4 @@
-# Mashreq Bank Assessment
+# Web App and Mob App Assessment
 
 This repository tech stack encompasses both mobile and web applications built with React Native and Next.js, respectively. The functionality checks include country-specific username validation, locale-based theme application, and seamless integration with native modules such as Firebase for push notifications. Both codebases exhibit high-quality organization, modular structure, and thorough testing, ensuring reusability and adherence to best practices. Security measures, including data encryption and secure communication with servers, are robustly implemented. Additionally, responsive design and essential features like user dashboards and password change mechanisms enhance user experience and security.
 
