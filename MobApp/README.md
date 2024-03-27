@@ -9,7 +9,7 @@
 - Redux
 - react-native-push-notification
 - Jest
-- 
+  
 ### Screenshots - iOS
 
 <div style="display:flex;">
