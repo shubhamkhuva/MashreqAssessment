@@ -9,16 +9,23 @@
 - Redux
 - react-native-push-notification
 - Jest
+- 
+### Screenshots - iOS
 
-<!-- Android Login Screenshot -->
-<img src="screenshot/Android - Login - English.png" alt="Android Login" width="200"/>
+<div style="display:flex;">
+  <img src="screenshot/iOS - Login - English.png" alt="iOS Login" width="150" />  
+  <img src="screenshot/iOS - Login - Hindi.png" alt="iOS Login" width="150" />  
+  <img src="screenshot/iOS - Login - French.png" alt="iOS Login" width="150" />  
+  <img src="screenshot/iOS - Register - English.png" alt="iOS Register" width="150" />  
+  <img src="screenshot/iOS - Dashboard - English.png" alt="iOS Dashboard" width="150" />
+</div>
 
-<!-- iOS Dashboard Screenshot -->
-<img src="screenshot/iOS - Dashboard - English.png" alt="iOS Dashboard" width="200"/>
+### Screenshots - Android
 
-<!-- iOS Dashboard Notification Screenshot -->
-<img src="screenshot/iOS - Dashboard - Notification.png" alt="iOS Dashboard Notification" width="200"/>
-
+<div style="display:flex;">
+    <img src="screenshot/Android - Login - English.png" alt="Android Login" width="200"/>
+    <img src="screenshot/Android - Dashboard - Notification.png" alt="Android Dashboard Notification" width="200" />
+</div>
 
 ## Run Locally
 
