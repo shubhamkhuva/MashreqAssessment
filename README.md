@@ -44,6 +44,7 @@ This repository tech stack encompasses both mobile and web applications built wi
 - ##### Is the React Native codebase clean, well-organized, and following best practices?
   Yes, the project structure and code are organized thanks to the prettifier, and the file names are properly specified.
 - ##### Are there proper comments and error handling mechanisms?
+  Yes, the majority of the code is commented to help readers understand why it is written the way it is. Error messages are set to show users the relevant messages based on the error.
 - ##### Are all the test cases passing and covers the requirements?
   Yes both project covered with test cases with library mock.
 - ##### Is the code written in a modular manner for reusability?
@@ -79,6 +80,7 @@ This repository tech stack encompasses both mobile and web applications built wi
 - ##### Is the React web codebase clean, well-organized, and following best practices?
   Yes, the project structure and code are organized thanks to the prettifier, and the file names are properly specified.
 - ##### Are there proper comments and error handling mechanisms?
+  Yes, the majority of the code is commented to help readers understand why it is written the way it is. Error messages are set to show users the relevant messages based on the error.
 - ##### Are all the test cases passing and covers the requirements?
   Yes both project covered with test cases with library mock.
 - ##### Is the code written in a modular manner for reusability?
