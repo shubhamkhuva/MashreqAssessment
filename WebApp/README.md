@@ -10,6 +10,17 @@
 - Jest
 - @mui/material
 
+### Screenshots
+
+<div style="display:flex;">
+  <img src="screenshot/Login - English.png" alt="Login - English" width="500" />  
+  <img src="screenshot/Login - Hindi.png" alt="Login - Hindi" width="500" />  
+  <img src="screenshot/Login - French.png" alt="Login - French" width="500" />  
+  <img src="screenshot/Register - English.png" alt="Register - English" width="500" />  
+  <img src="screenshot/Dashboard - English.png" alt="Dashboard - English" width="500" />  
+  <img src="screenshot/Change Password - English.png" alt="Dashboard - Password" width="500" />  
+</div>
+
 ## Run Locally
 
 Clone the project
