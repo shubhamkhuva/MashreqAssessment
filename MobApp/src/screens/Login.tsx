@@ -22,7 +22,6 @@ import {ERROR, SUCCESS, SUPPORTED_LANGUAGES} from '../utils/constant';
 import {t} from 'i18next';
 import i18n from '../localization/i18n';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {getUsernameRules} from '../utils/helper';
 import {useDispatch} from 'react-redux';
 import {setLoggedInUser} from '../context/actions/actions';
 import {validations} from '../utils/validations';
@@ -33,6 +32,7 @@ import {ROUTER_PATH} from '../navigation/routers';
 import MLogo from '../core/components/Logo';
 import {encryptString} from '../utils/security';
 import LanguageSwitcher from '../core/components/LanguageSwitcher';
+import {getUsernameRules} from '../utils/helper';
 
 const Login = ({navigation}: any) => {
   const [countryCode, setCountryCode] = useState<CountryCode>(

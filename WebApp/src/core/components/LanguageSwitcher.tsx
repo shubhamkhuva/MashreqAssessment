@@ -24,6 +24,14 @@ export default function LanguageSwitcher() {
     setAnchorEl(null);
   };
 
+  const getText = (key: string) => {
+    try {
+      return t(key);
+    } catch (e) {
+      return "";
+    }
+  };
+
   return (
     <>
       <Button
@@ -33,7 +41,7 @@ export default function LanguageSwitcher() {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        {t("language")}
+        {getText("language")}
       </Button>
       <Menu
         id="basic-menu"

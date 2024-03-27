@@ -27,11 +27,15 @@ function App({ Component, messages, pageProps }: any) {
   );
 }
 
-App.getInitialProps = async function getInitialProps(context: any) {
-  const { locale } = context.router;
+App.getInitialProps = async function getInitialProps(appContext: any) {
+  const { locale } = appContext.router;
+
+  // Import messages dynamically based on the locale
+  const messages = await import(`../localization/${locale}.json`);
+
   return {
-    ...(await NextApp.getInitialProps(context)),
-    messages: require(`../localization/${locale || "en"}.json`),
+    ...(await NextApp.getInitialProps(appContext)),
+    messages,
   };
 };
 

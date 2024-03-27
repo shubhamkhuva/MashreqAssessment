@@ -1,6 +1,5 @@
 import { validations } from "@/utils/validations";
 import { TextField, Grid } from "@mui/material";
-import { t } from "i18next";
 import { useTranslations } from "next-intl";
 import { Controller } from "react-hook-form";
 
@@ -30,6 +29,7 @@ const MTextInput = (props: MTextInputProps) => {
       }) => (
         <>
           <TextField
+            name={name}
             label={label}
             onChange={(e) => {
               onChangeValue(e, onChange);
@@ -44,6 +44,7 @@ const MTextInput = (props: MTextInputProps) => {
             {...(error && {
               helperText: t(error?.message),
             })}
+            data-testid={`${name}-input`}
           />
         </>
       )}

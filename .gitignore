@@ -67,3 +67,5 @@ MobApp/.metro-health-check*
 MobApp/coverage
 MobApp/android/app/build/*
 WebApp/.next/*
+MobApp/.jest/*
+WebApp/.next/*

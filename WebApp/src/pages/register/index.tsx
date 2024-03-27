@@ -135,6 +135,7 @@ export default function Register() {
                 type="submit"
                 variant="contained"
                 style={{ width: "100%", marginTop: 10 }}
+                aria-label={"register"}
               >
                 {executeRegisterLoading ? (
                   <CircularProgress size={24} />
