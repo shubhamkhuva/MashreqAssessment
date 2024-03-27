@@ -10,6 +10,16 @@
 - react-native-push-notification
 - Jest
 
+<!-- Android Login Screenshot -->
+<img src="screenshot/Android - Login - English.png" alt="Android Login" width="200"/>
+
+<!-- iOS Dashboard Screenshot -->
+<img src="screenshot/iOS - Dashboard - English.png" alt="iOS Dashboard" width="200"/>
+
+<!-- iOS Dashboard Notification Screenshot -->
+<img src="screenshot/iOS - Dashboard - Notification.png" alt="iOS Dashboard Notification" width="200"/>
+
+
 ## Run Locally
 
 **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
